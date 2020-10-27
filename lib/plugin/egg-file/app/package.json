@@ -1,0 +1,6 @@
+{
+  "name": "egg-file",
+  "eggPlugin": {
+    "name": "dirname"
+  }
+}
