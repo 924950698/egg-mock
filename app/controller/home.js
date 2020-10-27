@@ -8,10 +8,6 @@ const publicUrl = require('../constant/public');
 
 class HomeController extends Controller {
 
-  readFilePlugin(publicUrl, fileName) {
-    return fs.readFileSync(path.join(__dirname, publicUrl + fileName), 'utf8');
-  }
-
   async index() {
     const { ctx } = this;
     ctx.body = helper.dirname(publicUrl.homeUrl, 'db.json');
